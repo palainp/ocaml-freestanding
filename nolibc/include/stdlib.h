@@ -6,6 +6,7 @@
 void abort(void) __attribute__((noreturn));
 void exit(int) __attribute__((noreturn));
 void *malloc(size_t);
+int malloc_trim(size_t);
 void free(void *);
 void *calloc(size_t, size_t);
 void *realloc(void *, size_t);
